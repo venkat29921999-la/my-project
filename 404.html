@@ -5,20 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>404 - Page Not Found</title>
 <link rel="stylesheet" href="404.css">
+
+<!-- Lottie CDN -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body>
 
 <div class="container">
 
-  <img src="https://cdn-icons-png.flaticon.com/512/2748/2748558.png" class="img">
+  <!-- Lottie Animation -->
+  <lottie-player 
+    src="https://assets2.lottiefiles.com/packages/lf20_jcikwtux.json"
+    background="transparent"
+    speed="1"
+    class="lottie"
+    loop autoplay>
+  </lottie-player>
 
+  <!-- Text -->
   <h1 class="bounce">404</h1>
   <h2>Oops! Page Not Found</h2>
 
-  <p>You will be redirected to home in <span id="count">5</span> seconds</p>
+  <p>Redirecting to home in <span id="count">5</span> seconds...</p>
 
-  <button onclick="goHome()">Go to Home</button>
+  <!-- Spinner -->
+  <div class="loader"></div>
+
+  <!-- Buttons -->
+  <div class="btn-group">
+    <button onclick="goHome()">Go to Home</button>
+    <!-- <button onclick="consult()" class="consult-btn">Get Consultation</button> -->
+  </div>
 
 </div>
 
@@ -27,7 +45,11 @@ function goHome(){
   window.location.href = "index.html";
 }
 
-// Countdown + Auto redirect
+function consult(){
+  alert("Our team will contact you soon!");
+}
+
+// Countdown + redirect
 let time = 5;
 let counter = document.getElementById("count");
 

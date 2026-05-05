@@ -10,15 +10,17 @@
 <body>
 
 <header>
-  <div class="logo">
+ <div class="logo">
+  <a href="index.html">
     <img src="https://king18-lab.github.io/2026social/stacklylogo%20(1).webp">
-  </div>
+  </a>
+</div>
 
   <nav class="nav-center">
     <a href="#">Home</a>
-    <a href="#">Services</a>
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
   </nav>
 
   <button onclick="window.location.href='login.html'">Login</button>
@@ -28,40 +30,90 @@
   <div class="hero-text fade">
     <h1>Empowering Your Business Growth</h1>
     <p>We provide innovative IT and corporate solutions.</p>
-    <button onclick="start()">Get Consultation</button>
+    <button class="card-btn" onclick="go404()">Get Consultation</button>
   </div>
 
   <img class="fade" src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
 </section>
 
-<section class="features">
+<section class="features" id="services">
   <h2 class="fade">Our Services</h2>
 
+  <p class="service-desc fade">
+    We provide complete digital and IT solutions to help your business grow faster.
+  </p>
+
   <div class="cards">
+
     <div class="card fade">
+      <div class="icon">💻</div>
       <h3>IT Solutions</h3>
-      <p>Software and enterprise systems</p>
+      <p>Software, web apps, and enterprise systems.</p>
+      <ul>
+        <li>✔ Web Development</li>
+        <li>✔ App Development</li>
+        <li>✔ Cloud Services</li>
+      </ul>
+      <button class="card-btn" onclick="go404()">Explore</button>
     </div>
 
     <div class="card fade">
+      <div class="icon">🔐</div>
       <h3>Cyber Security</h3>
-      <p>Protect your business</p>
+      <p>Protect your business from cyber threats.</p>
+      <ul>
+        <li>✔ Data Protection</li>
+        <li>✔ Network Security</li>
+        <li>✔ Risk Analysis</li>
+      </ul>
+      <button class="card-btn" onclick="go404()">Explore</button>
     </div>
 
     <div class="card fade">
+      <div class="icon">📊</div>
       <h3>Consulting</h3>
-      <p>Business growth strategies</p>
+      <p>Business growth strategies.</p>
+      <ul>
+        <li>✔ Strategy</li>
+        <li>✔ Planning</li>
+        <li>✔ Analytics</li>
+      </ul>
+      <button class="card-btn" onclick="go404()">Explore</button>
     </div>
+
   </div>
 </section>
 
-<section class="gallery">
+<section class="gallery" id="projects">
   <h2 class="fade">Our Projects</h2>
 
-  <div class="images">
-    <img src="https://picsum.photos/300/200?1">
-    <img src="https://picsum.photos/300/200?2">
-    <img src="https://picsum.photos/300/200?3">
+  <p class="project-desc fade">
+    We have successfully delivered innovative solutions across multiple industries.
+  </p>
+
+  <div class="project-cards">
+
+    <div class="project-card fade">
+      <img src="https://picsum.photos/300/200?1">
+      <h3>Corporate Website</h3>
+      <p>Designed a modern business website with responsive UI.</p>
+      <button class="project-btn" onclick="go404()">View Details</button>
+    </div>
+
+    <div class="project-card fade">
+      <img src="https://picsum.photos/300/200?2">
+      <h3>Mobile App</h3>
+      <p>Developed a cross-platform mobile app with smooth UX.</p>
+      <button class="project-btn" onclick="go404()">View Details</button>
+    </div>
+
+    <div class="project-card fade">
+      <img src="https://picsum.photos/300/200?3">
+      <h3>E-Commerce Platform</h3>
+      <p>Created a scalable online shopping system.</p>
+      <button class="project-btn" onclick="go404()">View Details</button>
+    </div>
+
   </div>
 </section>
 
@@ -69,15 +121,59 @@
   <h2 class="fade">Our Plans</h2>
 
   <div class="price-cards">
-    <div class="price">Starter</div>
-    <div class="price">Professional</div>
-    <div class="price">Enterprise</div>
+
+  <div class="price" onclick="go404()">
+    Starter
   </div>
+
+  <div class="price" onclick="go404()">
+    Professional
+  </div>
+
+  <div class="price" onclick="go404()">
+    Enterprise
+  </div>
+
+</div>
 </section>
 
 <section class="cta">
-  <h2>Let’s Build Your Business</h2>
-  <button onclick="start()">Contact Us</button>
+  <!-- <h2>Let’s Build Your Business</h2>
+  <button onclick="start()">Contact Us</button> -->
+</section>
+
+<section class="contact" id="contact">
+
+  <h2 class="fade">Contact Us</h2>
+
+  <p class="contact-desc fade">
+    Have a project in mind? Let’s connect and build something amazing together.
+  </p>
+
+  <div class="contact-container">
+
+    <!-- LEFT INFO -->
+    <div class="contact-info fade">
+      <h3>Get in Touch</h3>
+      <p>📧 info@stackly.com</p>
+      <p>📞 +91 1234567890</p>
+      <p>📍 Chennai, India</p>
+    </div>
+
+    <!-- RIGHT FORM -->
+    <form class="contact-form fade">
+
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+
+      <textarea rows="4" placeholder="Your Message"></textarea>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+
+  </div>
+
 </section>
 
 <!-- Footer -->
@@ -124,7 +220,7 @@
     <div class="footer-box">
       <h3>Contact Us</h3>
       <p>Email: info@stackly.com</p>
-      <p>Phone: +91 70107 92745</p>
+      <p>Phone: +91 1234567890</p>
       <p>Location: Chennai, India</p>
     </div>
 
@@ -141,15 +237,30 @@ function start(){
   alert("Our team will contact you!");
 }
 
-const faders = document.querySelectorAll('.fade');
-const observer = new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      e.target.classList.add('show');
+/* Animation */
+const elements = document.querySelectorAll(
+  '.fade, .card, .project-card, .contact-info, .contact-form'
+);
+
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
     }
   });
-});
-faders.forEach(el=>observer.observe(el));
+},{ threshold:0.2 });
+
+elements.forEach(el => observer.observe(el));
+
+/* Go 404 */
+function go404(){
+  window.location.href = "404.html";
+}
+
+/* FIXED LOGO CLICK */
+function goHome(){
+  window.location.href = "index.html";
+}
 </script>
 
 </body>

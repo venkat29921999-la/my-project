@@ -62,5 +62,14 @@ button:hover{
 
 .link a{
   text-decoration:none;
-  color:#00d4ff;
+  color:#17424b;
+}
+.home-btn{
+  background:#333;
+  color:white;
+  margin-top:10px;
+}
+
+.home-btn:hover{
+  background:#555;
 }

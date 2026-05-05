@@ -40,6 +40,9 @@
 
     <button onclick="validateSignup()">Sign Up</button>
 
+    <!-- NEW BUTTON -->
+    <button class="home-btn" onclick="goHome()">Go to Home</button>
+
     <p class="link">Already have an account? 
       <a href="signin.html">Login</a>
     </p>
@@ -48,7 +51,6 @@
 
 <script>
 function validateSignup(){
-
   let name = document.getElementById("name").value.trim();
   let email = document.getElementById("email").value.trim();
   let address = document.getElementById("address").value.trim();
@@ -58,50 +60,46 @@ function validateSignup(){
 
   let valid = true;
 
-  // Clear errors
   document.querySelectorAll(".error").forEach(e => e.innerText = "");
 
-  // Name
   if(name === ""){
     document.getElementById("nameError").innerText = "Name required";
     valid = false;
   }
 
-  // Email
   let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
   if(!email.match(emailPattern)){
     document.getElementById("emailError").innerText = "Enter valid email";
     valid = false;
   }
 
-  // Address
   if(address === ""){
     document.getElementById("addressError").innerText = "Address required";
     valid = false;
   }
 
-  // Password
   if(password.length < 6){
     document.getElementById("passError").innerText = "Min 6 characters";
     valid = false;
   }
 
-  // Confirm password
   if(password !== confirm){
     document.getElementById("confirmError").innerText = "Passwords do not match";
     valid = false;
   }
 
-  // Plan
   if(plan === ""){
     document.getElementById("planError").innerText = "Select a plan";
     valid = false;
   }
 
   if(valid){
-    // alert("Account created successfully!");
     window.location.href = "404.html";
   }
+}
+
+function goHome(){
+  window.location.href = "index.html";
 }
 </script>
 
