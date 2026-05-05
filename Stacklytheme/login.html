@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - Stackly</title>
+<link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+<div class="form-container">
+  <div class="form-box">
+    <img src="https://king18-lab.github.io/2026social/stacklylogo%20(1).webp" class="logo">
+
+    <h2>Create Account</h2>
+
+    <input type="text" id="name" placeholder="Full Name">
+    <small class="error" id="nameError"></small>
+
+    <input type="email" id="email" placeholder="Email Address">
+    <small class="error" id="emailError"></small>
+
+    <input type="text" id="address" placeholder="Address">
+    <small class="error" id="addressError"></small>
+
+    <input type="password" id="password" placeholder="Password">
+    <small class="error" id="passError"></small>
+
+    <input type="password" id="confirm" placeholder="Confirm Password">
+    <small class="error" id="confirmError"></small>
+
+    <select id="plan">
+      <option value="">Select Plan</option>
+      <option>Starter</option>
+      <option>Professional</option>
+      <option>Enterprise</option>
+    </select>
+    <small class="error" id="planError"></small>
+
+    <button onclick="validateSignup()">Sign Up</button>
+
+    <p class="link">Already have an account? 
+      <a href="signin.html">Login</a>
+    </p>
+  </div>
+</div>
+
+<script>
+function validateSignup(){
+
+  let name = document.getElementById("name").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let address = document.getElementById("address").value.trim();
+  let password = document.getElementById("password").value;
+  let confirm = document.getElementById("confirm").value;
+  let plan = document.getElementById("plan").value;
+
+  let valid = true;
+
+  // Clear errors
+  document.querySelectorAll(".error").forEach(e => e.innerText = "");
+
+  // Name
+  if(name === ""){
+    document.getElementById("nameError").innerText = "Name required";
+    valid = false;
+  }
+
+  // Email
+  let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  if(!email.match(emailPattern)){
+    document.getElementById("emailError").innerText = "Enter valid email";
+    valid = false;
+  }
+
+  // Address
+  if(address === ""){
+    document.getElementById("addressError").innerText = "Address required";
+    valid = false;
+  }
+
+  // Password
+  if(password.length < 6){
+    document.getElementById("passError").innerText = "Min 6 characters";
+    valid = false;
+  }
+
+  // Confirm password
+  if(password !== confirm){
+    document.getElementById("confirmError").innerText = "Passwords do not match";
+    valid = false;
+  }
+
+  // Plan
+  if(plan === ""){
+    document.getElementById("planError").innerText = "Select a plan";
+    valid = false;
+  }
+
+  if(valid){
+    // alert("Account created successfully!");
+    window.location.href = "404.html";
+  }
+}
+</script>
+
+</body>
+</html>

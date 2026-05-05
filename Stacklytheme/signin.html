@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+<div class="form-container">
+  <div class="form-box">
+
+    <img src="https://king18-lab.github.io/2026social/stacklylogo%20(1).webp" class="logo">
+
+    <h2>Login</h2>
+
+    <input type="email" id="loginEmail" placeholder="Email">
+    <small class="error" id="loginEmailError"></small>
+
+    <input type="password" id="loginPass" placeholder="Password">
+    <small class="error" id="loginPassError"></small>
+
+    <button onclick="validateLogin()">Login</button>
+
+    <p class="link">New user? 
+      <a href="login.html">Create Account</a>
+    </p>
+
+  </div>
+</div>
+
+<script>
+
+function validateLogin(){
+
+  let email = document.getElementById("loginEmail").value.trim();
+  let pass = document.getElementById("loginPass").value;    
+
+  let valid = true;
+
+  document.getElementById("loginEmailError").innerText = "";
+  document.getElementById("loginPassError").innerText = "";
+
+  if(email === ""){
+    document.getElementById("loginEmailError").innerText = "Email required";
+    valid = false;
+  }
+
+  if(pass === ""){
+    document.getElementById("loginPassError").innerText = "Password required";
+    valid = false;
+  }
+
+  if(valid){
+    // alert("Login successful!");
+    window.location.href = "404.html";
+  }
+}
+</script>
+
+</body>
+</html>
