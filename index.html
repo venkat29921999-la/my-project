@@ -4,263 +4,1294 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Stackly Corporate</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
+  <!-- HEADER -->
+   <!-- HEADER -->
 <header>
- <div class="logo">
-  <a href="index.html">
-    <img src="https://king18-lab.github.io/2026social/stacklylogo%20(1).webp">
-  </a>
-</div>
 
-  <nav class="nav-center">
-    <a href="#">Home</a>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <!-- LOGO -->
+  <div class="logo">
 
-  <button onclick="window.location.href='login.html'">Login</button>
-</header>
+    <a href="index.html">
 
-<section class="hero">
-  <div class="hero-text fade">
-    <h1>Empowering Your Business Growth</h1>
-    <p>We provide innovative IT and corporate solutions.</p>
-    <button class="card-btn" onclick="go404()">Get Consultation</button>
+      <img src="./Assest/stacklylogo (1).webp">
+
+    </a>
+
   </div>
 
-  <img class="fade" src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
+  <!-- DESKTOP NAV -->
+  <nav class="nav-center">
+
+    <a href="#home">Home</a>
+
+    <a href="404.html">Services</a>
+
+    <a href="404.html">Projects</a>
+
+    <a href="404.html">Plans</a>
+
+    <a href="404.html">Contact</a>
+
+  </nav>
+
+  <!-- LOGIN -->
+  <button onclick="window.location.href='signin.html'">
+    Login
+  </button>
+
+  <!-- MOBILE MENU ICON -->
+  <div class="menu-toggle" onclick="openMenu()">
+
+    ☰
+
+  </div>
+
+</header>
+
+<!-- MOBILE SIDEBAR -->
+<div class="mobile-menu" id="mobileMenu">
+
+  <!-- CLOSE -->
+  <div class="close-btn"
+  onclick="closeMenu()">
+    ✕
+  </div>
+
+  <a href="#home" onclick="closeMenu()">
+    Home
+  </a>
+
+  <a href="404.html">
+    Services
+  </a>
+
+  <a href="404.html">
+    Projects
+  </a>
+
+  <a href="404.html">
+    Plans
+  </a>
+
+  <a href="404.html">
+    Contact
+  </a>
+
+  <button onclick="window.location.href='signin.html'">
+    Login
+  </button>
+
+</div>
+
+<section class="hero" id="home">
+
+  <div class="hero-text fade">
+
+    <h1>
+      Empowering Your Digital Business Growth
+    </h1>
+
+    <p>
+      Stackly provides enterprise solutions,
+      cloud systems, AI integration,
+      cybersecurity services and modern
+      web applications for businesses.
+    </p>
+
+    <div class="hero-buttons">
+
+      <button onclick="go404()">
+  Get Consultation
+</button>
+
+      <button class="secondary-btn"
+      onclick="go404()">
+        Explore More
+      </button>
+
+    </div>
+
+  </div>
+
+  <img class="hero-image fade"
+  src="./Assest/1055687[1] (1).webp">
+
 </section>
 
-<section class="features" id="services">
-  <h2 class="fade">Our Services</h2>
+<!-- STATS -->
+<section class="stats fade">
 
-  <p class="service-desc fade">
-    We provide complete digital and IT solutions to help your business grow faster.
-  </p>
+  <div class="stat-box">
+    <h2>120+</h2>
+    <p>Projects</p>
+  </div>
+
+  <div class="stat-box">
+    <h2>85+</h2>
+    <p>Clients</p>
+  </div>
+
+  <div class="stat-box">
+    <h2>24/7</h2>
+    <p>Support</p>
+  </div>
+
+  <div class="stat-box">
+    <h2>99%</h2>
+    <p>Satisfaction</p>
+  </div>
+
+</section>
+
+<!-- BRANDS -->
+<!-- TRUSTED COMPANIES -->
+<section class="brands fade">
+
+  <div class="section-title">
+
+    <span>TRUSTED BY COMPANIES</span>
+
+    <h2>
+      Trusted By Modern Businesses
+    </h2>
+
+    <p>
+      Companies worldwide trust Stackly
+      for enterprise software and digital solutions.
+    </p>
+
+  </div>
+
+  <div class="brand-logos">
+
+    <img src="./Assest/google-1-1[1].webp">
+
+    <img src="./Assest/microsoft-5[1].webp">
+
+    <img src="./Assest/netflix-3[1].webp">
+
+    <img src="./Assest/slack-new-logo[1].webp">
+
+    <img src="./Assest/spotify-2[1].webp">
+
+
+  <img src="./Assest/adobe-2[1].webp">
+
+  <img src="./Assest/airbnb[1].webp">
+
+  <img src="./Assest/tesla-9[1].webp">
+
+  <img src="./Assest/github-icon-1[1].webp">
+
+
+  </div>
+
+</section>
+
+<!-- SERVICES -->
+<section class="features" id="services">
+
+  <div class="section-title fade">
+
+    <span>OUR SERVICES</span>
+
+    <h2>
+      Smart Digital Solutions For Modern Businesses
+    </h2>
+
+    <p>
+      Stackly delivers enterprise-grade digital products,
+      cloud platforms, AI automation and modern web systems
+      designed for startups, enterprises and growing brands.
+    </p>
+
+  </div>
 
   <div class="cards">
 
+    <!-- CARD 1 -->
     <div class="card fade">
-      <div class="icon">💻</div>
-      <h3>IT Solutions</h3>
-      <p>Software, web apps, and enterprise systems.</p>
+
+      <div class="service-icon">
+        <img src="./Assest/1055687[1] (1).webp">
+      </div>
+
+      <h3>Web Development</h3>
+
+      <p>
+        Professional responsive websites,
+        dashboards and enterprise systems.
+      </p>
+
       <ul>
-        <li>✔ Web Development</li>
-        <li>✔ App Development</li>
-        <li>✔ Cloud Services</li>
+        <li>✔ React Applications</li>
+        <li>✔ Corporate Platforms</li>
+        <li>✔ API Integration</li>
       </ul>
-      <button class="card-btn" onclick="go404()">Explore</button>
+
+      <button onclick="go404()">
+        Explore Service
+      </button>
+
     </div>
 
+    <!-- CARD 2 -->
     <div class="card fade">
-      <div class="icon">🔐</div>
+
+      <div class="service-icon">
+        <img src="./Assest/3064197[1].webp">
+      </div>
+
       <h3>Cyber Security</h3>
-      <p>Protect your business from cyber threats.</p>
+
+      <p>
+        Enterprise-level cloud protection
+        and secure infrastructure systems.
+      </p>
+
       <ul>
-        <li>✔ Data Protection</li>
-        <li>✔ Network Security</li>
-        <li>✔ Risk Analysis</li>
+        <li>✔ Threat Detection</li>
+        <li>✔ Firewall Security</li>
+        <li>✔ Secure Authentication</li>
       </ul>
-      <button class="card-btn" onclick="go404()">Explore</button>
+
+      <button onclick="go404()">
+        Explore Service
+      </button>
+
     </div>
 
+    <!-- CARD 3 -->
     <div class="card fade">
-      <div class="icon">📊</div>
-      <h3>Consulting</h3>
-      <p>Business growth strategies.</p>
+
+      <div class="service-icon">
+        <img src="./Assest/4248443[1].webp">
+      </div>
+
+      <h3>AI Automation</h3>
+
+      <p>
+        AI-powered workflow systems
+        and enterprise automation tools.
+      </p>
+
       <ul>
-        <li>✔ Strategy</li>
-        <li>✔ Planning</li>
-        <li>✔ Analytics</li>
+        <li>✔ Smart Automation</li>
+        <li>✔ AI Integration</li>
+        <li>✔ Data Intelligence</li>
       </ul>
-      <button class="card-btn" onclick="go404()">Explore</button>
+
+      <button onclick="go404()">
+        Explore Service
+      </button>
+
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card fade">
+
+      <div class="service-icon">
+        <img src="./Assest/1055687[1] (1).webp">
+      </div>
+
+      <h3>Cloud Infrastructure</h3>
+
+      <p>
+        Scalable cloud hosting
+        and enterprise deployment systems.
+      </p>
+
+      <ul>
+        <li>✔ AWS Hosting</li>
+        <li>✔ Cloud Security</li>
+        <li>✔ High Performance</li>
+      </ul>
+
+      <button onclick="go404()">
+        Explore Service
+      </button>
+
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="card fade">
+
+      <div class="service-icon">
+        <img src="./Assest/2721297[1].webp">
+      </div>
+
+      <h3>Business Analytics</h3>
+
+      <p>
+        Smart business dashboards
+        and real-time data analytics.
+      </p>
+
+      <ul>
+        <li>✔ Live Reports</li>
+        <li>✔ KPI Dashboard</li>
+        <li>✔ Data Insights</li>
+      </ul>
+
+      <button onclick="go404()">
+        Explore Service
+      </button>
+
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="card fade">
+
+      <div class="service-icon">
+        <img src="./Assest/4149647[1].webp">
+      </div>
+
+      <h3>UI/UX Design</h3>
+
+      <p>
+        Modern interactive user interfaces
+        with premium user experience.
+      </p>
+
+      <ul>
+        <li>✔ Mobile Responsive</li>
+        <li>✔ Glassmorphism UI</li>
+        <li>✔ Interactive Design</li>
+      </ul>
+
+      <button onclick="go404()">
+        Explore Service
+      </button>
+
     </div>
 
   </div>
+
 </section>
 
+<!-- ABOUT -->
+<section class="about fade">
+
+  <div class="about-image">
+
+    <img src="./Assest/photo-1522071820081-009f0129c71c.webp">
+
+  </div>
+
+  <div class="about-content">
+
+    <h2>Why Choose Stackly?</h2>
+
+    <p>
+      Stackly delivers enterprise-grade
+      solutions with modern technologies,
+      scalable architecture and AI automation.
+    </p>
+
+    <div class="about-points">
+
+      <div>✔ 10+ Years Experience</div>
+      <div>✔ Global Support</div>
+      <div>✔ AI Automation</div>
+      <div>✔ Secure Infrastructure</div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PROJECTS -->
+<!-- PROJECTS -->
 <section class="gallery" id="projects">
-  <h2 class="fade">Our Projects</h2>
 
-  <p class="project-desc fade">
-    We have successfully delivered innovative solutions across multiple industries.
-  </p>
+  <div class="section-title fade">
 
-  <div class="project-cards">
+    <span>OUR PROJECTS</span>
 
-    <div class="project-card fade">
-      <img src="https://picsum.photos/300/200?1">
-      <h3>Corporate Website</h3>
-      <p>Designed a modern business website with responsive UI.</p>
-      <button class="project-btn" onclick="go404()">View Details</button>
+    <h2>
+      Professional Digital Products & Solutions
+    </h2>
+
+    <p>
+      Explore enterprise-grade applications,
+      SaaS systems and modern business platforms
+      developed by Stackly.
+    </p>
+
+  </div>
+
+  <!-- SLIDER -->
+  <div class="project-slider">
+
+    <!-- LEFT BUTTON -->
+    <button class="slide-btn left"
+    onclick="moveSlide(-1)">
+      ❮
+    </button>
+
+    <!-- PROJECT WRAPPER -->
+    <div class="project-container">
+
+      <div class="project-track" id="projectTrack">
+
+        <!-- CARD 1 -->
+        <div class="project-card fade">
+
+          <img src="./Assest/photo-1498050108023-c5249f4df085.webp">
+
+          <div class="project-content">
+
+            <span>Corporate</span>
+
+            <h3>Enterprise Dashboard</h3>
+
+            <p>
+              Smart enterprise analytics
+              and business reporting system.
+            </p>
+
+            <button onclick="go404()">
+              View Project
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="project-card fade">
+
+          <img src="./Assest/photo-1516321318423-f06f85e504b3.webp">
+
+          <div class="project-content">
+
+            <span>AI Platform</span>
+
+            <h3>Automation System</h3>
+
+            <p>
+              AI workflow and enterprise automation.
+            </p>
+
+            <button onclick="go404()">
+              View Project
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="project-card fade">
+
+          <img src="./Assest/photo-1520607162513-77705c0f0d4a.webp">
+
+          <div class="project-content">
+
+            <span>Cloud</span>
+
+            <h3>Cloud Infrastructure</h3>
+
+            <p>
+              Enterprise cloud deployment system.
+            </p>
+
+            <button onclick="go404()">
+              View Project
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="project-card fade">
+
+          <img src="./Assest/photo-1556740749-887f6717d7e4.webp">
+
+          <div class="project-content">
+
+            <span>E-Commerce</span>
+
+            <h3>Online Shopping Platform</h3>
+
+            <p>
+              Modern responsive shopping system.
+            </p>
+
+            <button onclick="go404()">
+              View Project
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="project-card fade">
+
+          <img src="./Assest/photo-1559028012-481c04fa702d.webp">
+
+          <div class="project-content">
+
+            <span>Security</span>
+
+            <h3>Cyber Security Portal</h3>
+
+            <p>
+              Enterprise security monitoring dashboard.
+            </p>
+
+            <button onclick="go404()">
+              View Project
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="project-card fade">
+
+          <img src="./Assest/photo-1460925895917-afdab827c52f.webp">
+
+          <div class="project-content">
+
+            <span>Analytics</span>
+
+            <h3>Business Analytics</h3>
+
+            <p>
+              Real-time analytics and KPI reporting.
+            </p>
+
+            <button onclick="go404()">
+              View Project
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="project-card fade">
+
+          <img src="./Assest/photo-1504384308090-c894fdcc538d.webp">
+
+          <div class="project-content">
+
+            <span>Startup</span>
+
+            <h3>Startup SaaS Platform</h3>
+
+            <p>
+              Premium SaaS dashboard for startups.
+            </p>
+
+            <button onclick="go404()">
+              View Project
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="project-card fade">
+
+          <img src="./Assest/photo-1451187580459-43490279c0fa.webp">
+
+          <div class="project-content">
+
+            <span>Technology</span>
+
+            <h3>AI Cloud Platform</h3>
+
+            <p>
+              AI cloud integration and automation tools.
+            </p>
+
+            <button onclick="go404()">
+              View Project
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="project-card fade">
-      <img src="https://picsum.photos/300/200?2">
-      <h3>Mobile App</h3>
-      <p>Developed a cross-platform mobile app with smooth UX.</p>
-      <button class="project-btn" onclick="go404()">View Details</button>
+    <!-- RIGHT BUTTON -->
+    <button class="slide-btn right"
+    onclick="moveSlide(1)">
+      ❯
+    </button>
+
+  </div>
+
+</section>
+
+<!-- TESTIMONIAL -->
+<!-- TESTIMONIAL -->
+<section class="testimonial fade">
+
+  <div class="testimonial-title">
+
+    <span>CLIENT REVIEWS</span>
+
+    <h2>
+      Trusted By Businesses Worldwide
+    </h2>
+
+    <p>
+      Stackly helps startups and enterprises
+      build scalable modern digital platforms
+      with enterprise-level solutions.
+    </p>
+
+  </div>
+
+  <div class="testimonial-wrapper">
+
+    <!-- CARD 1 -->
+    <div class="testimonial-card-modern">
+
+      <div class="quote-icon">
+        ❝
+      </div>
+
+      <p>
+        Stackly completely transformed our
+        enterprise dashboard with modern UI,
+        AI analytics and scalable cloud systems.
+      </p>
+
+      <div class="client-info">
+
+        <img src="./Assest/32[1].webp">
+
+        <div>
+
+          <h4>Michael Johnson</h4>
+
+          <span>CEO, TechNova</span>
+
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="project-card fade">
-      <img src="https://picsum.photos/300/200?3">
-      <h3>E-Commerce Platform</h3>
-      <p>Created a scalable online shopping system.</p>
-      <button class="project-btn" onclick="go404()">View Details</button>
+    <!-- CARD 2 -->
+    <div class="testimonial-card-modern active-card">
+
+      <div class="quote-icon">
+        ❝
+      </div>
+
+      <p>
+        Their cybersecurity infrastructure
+        and cloud deployment services improved
+        our business performance significantly.
+      </p>
+
+      <div class="client-info">
+
+        <img src="./Assest/44[1].webp">
+
+        <div>
+
+          <h4>Sarah Williams</h4>
+
+          <span>Director, Nexa Corp</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="testimonial-card-modern">
+
+      <div class="quote-icon">
+        ❝
+      </div>
+
+      <p>
+        Stackly delivered a premium SaaS
+        platform with modern animations,
+        responsive UI and AI automation.
+      </p>
+
+      <div class="client-info">
+
+        <img src="./Assest/51[1].webp">
+
+        <div>
+
+          <h4>David Smith</h4>
+
+          <span>Founder, CloudEdge</span>
+
+        </div>
+
+      </div>
+
     </div>
 
   </div>
+
 </section>
 
-<section class="pricing">
-  <h2 class="fade">Our Plans</h2>
+<!-- PRICING -->
+<section class="pricing" id="plans">
 
-  <div class="price-cards">
+  <div class="pricing-title fade">
 
-  <div class="price" onclick="go404()">
-    Starter
+    <span>PRICING PLANS</span>
+
+    <h2>
+      Flexible Plans For Every Business
+    </h2>
+
+    <p>
+      Choose the perfect plan for your startup,
+      growing business or enterprise company.
+    </p>
+
   </div>
 
-  <div class="price" onclick="go404()">
-    Professional
+  <div class="pricing-wrapper">
+
+    <!-- STARTER -->
+    <div class="pricing-card fade">
+
+      <div class="plan-image">
+
+        <img src="./Assest/3135715[1].webp">
+
+      </div>
+
+      <h3>Starter</h3>
+
+      <h1>
+        ₹999
+        <span>/month</span>
+      </h1>
+
+      <p class="plan-desc">
+        Perfect for startups and small businesses.
+      </p>
+
+      <ul>
+
+        <li>✔ Responsive Website</li>
+
+        <li>✔ 5 Pages Included</li>
+
+        <li>✔ Basic SEO</li>
+
+        <li>✔ Email Support</li>
+
+        <li>✔ Hosting Setup</li>
+
+      </ul>
+
+      <button onclick="go404()">
+        Get Started
+      </button>
+
+    </div>
+
+    <!-- PROFESSIONAL -->
+    <div class="pricing-card featured-plan fade">
+
+      <div class="popular-badge">
+        MOST POPULAR
+      </div>
+
+      <div class="plan-image">
+
+        <img src="./Assest/4149647[1].webp">
+
+      </div>
+
+      <h3>Professional</h3>
+
+      <h1>
+        ₹2499
+        <span>/month</span>
+      </h1>
+
+      <p class="plan-desc">
+        Advanced business solutions for growing brands.
+      </p>
+
+      <ul>
+
+        <li>✔ Full Web Application</li>
+
+        <li>✔ AI Automation</li>
+
+        <li>✔ Cloud Deployment</li>
+
+        <li>✔ Dashboard Analytics</li>
+
+        <li>✔ Priority Support</li>
+
+      </ul>
+
+      <button onclick="go404()">
+        Choose Plan
+      </button>
+
+    </div>
+
+    <!-- ENTERPRISE -->
+    <div class="pricing-card fade">
+
+      <div class="plan-image">
+
+        <img src="./Assest/3523887[1].webp">
+
+      </div>
+
+      <h3>Enterprise</h3>
+
+      <h1>
+        Custom
+      </h1>
+
+      <p class="plan-desc">
+        Enterprise-grade scalable digital infrastructure.
+      </p>
+
+      <ul>
+
+        <li>✔ Unlimited Features</li>
+
+        <li>✔ Enterprise Security</li>
+
+        <li>✔ AI Cloud Systems</li>
+
+        <li>✔ Dedicated Team</li>
+
+        <li>✔ 24/7 Support</li>
+
+      </ul>
+
+      <button onclick="go404()">
+        Contact Sales
+      </button>
+
+    </div>
+
   </div>
 
-  <div class="price" onclick="go404()">
-    Enterprise
-  </div>
-
-</div>
 </section>
+<!-- CONTACT -->
+<section class="contact fade" id="contact">
 
-<section class="cta">
-  <!-- <h2>Let’s Build Your Business</h2>
-  <button onclick="start()">Contact Us</button> -->
-</section>
+  <div class="section-title">
 
-<section class="contact" id="contact">
+    <span>CONTACT US</span>
 
-  <h2 class="fade">Contact Us</h2>
+    <h2>
+      Let's Build Something Amazing
+    </h2>
 
-  <p class="contact-desc fade">
-    Have a project in mind? Let’s connect and build something amazing together.
-  </p>
+    <p>
+      Contact Stackly for modern business solutions,
+      AI systems, enterprise software and cloud services.
+    </p>
+
+  </div>
 
   <div class="contact-container">
 
-    <!-- LEFT INFO -->
-    <div class="contact-info fade">
-      <h3>Get in Touch</h3>
+    <!-- INFO -->
+    <div class="contact-info">
+
+      <h3>Get In Touch</h3>
+
       <p>📧 info@stackly.com</p>
-      <p>📞 +91 1234567890</p>
-      <p>📍 Chennai, India</p>
+
+      <p>📞 +91 9999955555</p>
+
+      <p>📍 Chennai, Tamil Nadu</p>
+
+      <p>🕒 Mon - Sat : 9AM - 7PM</p>
+
     </div>
 
-    <!-- RIGHT FORM -->
-    <form class="contact-form fade">
+    <!-- FORM -->
+    <div class="contact-form">
 
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
+      <!-- NAME -->
+      <input
+      type="text"
+      id="contactName"
+      placeholder="Your Name">
 
-      <textarea rows="4" placeholder="Your Message"></textarea>
+      <small class="contact-error"
+      id="nameError"></small>
 
-      <button type="submit">Send Message</button>
+      <!-- EMAIL -->
+      <input
+      type="email"
+      id="contactEmail"
+      placeholder="Your Email">
 
-    </form>
+      <small class="contact-error"
+      id="emailError"></small>
+
+      <!-- SUBJECT -->
+      <input
+      type="text"
+      id="contactSubject"
+      placeholder="Subject">
+
+      <small class="contact-error"
+      id="subjectError"></small>
+
+      <!-- MESSAGE -->
+      <textarea
+      rows="5"
+      id="contactMessage"
+      placeholder="Your Message"></textarea>
+
+      <small class="contact-error"
+      id="messageError"></small>
+
+      <!-- BUTTON -->
+      <button onclick="validateContact()">
+        Send Message
+      </button>
+
+    </div>
 
   </div>
 
 </section>
 
-<!-- Footer -->
+<!-- FOOTER -->
+<!-- FOOTER -->
 <footer class="footer">
-  <div class="footer-container">
 
-    <!-- Company -->
+  <div class="footer-top">
+
+    <!-- COMPANY -->
     <div class="footer-box">
-      <img src="https://king18-lab.github.io/2026social/stacklylogo%20(1).webp" class="footer-logo">
-      <p>Stackly is a corporate IT solutions company providing consulting, security, and digital transformation services.</p>
 
-      <!-- Social Icons -->
+      <!-- LOGO -->
+      <a href="index.html">
+
+        <img
+        src="./Assest/stacklylogo (1).webp"
+        class="footer-logo">
+
+      </a>
+
+      <p>
+        Stackly is a modern enterprise technology company
+        delivering AI automation, cloud systems,
+        cybersecurity solutions and scalable digital platforms.
+      </p>
+
+      <!-- SOCIAL -->
       <div class="social-icons">
+
         <a href="#">🌐</a>
         <a href="#">📘</a>
-        <a href="#">🐦</a>
+        <a href="#">📸</a>
         <a href="#">💼</a>
+
       </div>
+
     </div>
 
-    <!-- Links -->
+    <!-- QUICK LINKS -->
     <div class="footer-box">
+
       <h3>Quick Links</h3>
+
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+
+        <li>
+          <a href="index.html">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="404.html">
+            Services
+          </a>
+        </li>
+
+        <li>
+          <a href="404.html">
+            Projects
+          </a>
+        </li>
+
+        <li>
+          <a href="404.html">
+            Plans
+          </a>
+        </li>
+
+        <li>
+          <a href="404.html">
+            Contact
+          </a>
+        </li>
+
       </ul>
+
     </div>
 
-    <!-- Services -->
+    <!-- SERVICES -->
     <div class="footer-box">
-      <h3>Our Services</h3>
+
+      <h3>Services</h3>
+
       <ul>
-        <li>IT Solutions</li>
-        <li>Cyber Security</li>
-        <li>Cloud Services</li>
-        <li>Consulting</li>
+
+        <li>
+          <a href="404.html">
+            Web Development
+          </a>
+        </li>
+
+        <li>
+          <a href="404.html">
+            Cyber Security
+          </a>
+        </li>
+
+        <li>
+          <a href="404.html">
+            AI Automation
+          </a>
+        </li>
+
+        <li>
+          <a href="404.html">
+            Cloud Solutions
+          </a>
+        </li>
+
+        <li>
+          <a href="404.html">
+            Business Analytics
+          </a>
+        </li>
+
       </ul>
+
     </div>
 
-    <!-- Contact -->
+    <!-- CONTACT -->
     <div class="footer-box">
+
       <h3>Contact Us</h3>
-      <p>Email: info@stackly.com</p>
-      <p>Phone: +91 1234567890</p>
-      <p>Location: Chennai, India</p>
+
+      <p>📧 info@stackly.com</p>
+
+      <p>📞 +91 9999955555</p>
+
+      <p>📍 Chennai, Tamil Nadu</p>
+
+      <p>🕒 Mon - Sat : 9AM - 7PM</p>
+
     </div>
 
   </div>
 
-  <!-- Bottom -->
+  <!-- BOTTOM -->
   <div class="footer-bottom">
-    <p>© 2026 Stackly. All Rights Reserved.</p>
+
+    <p>
+      © 2026 Stackly Technologies.
+      All Rights Reserved.
+    </p>
+
   </div>
+
 </footer>
 
 <script>
+
+/* CONSULT */
 function start(){
-  alert("Our team will contact you!");
+  alert("Consultation request sent!");
 }
 
-/* Animation */
-const elements = document.querySelectorAll(
-  '.fade, .card, .project-card, .contact-info, .contact-form'
-);
-
-const observer = new IntersectionObserver((entries)=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add('show');
-    }
-  });
-},{ threshold:0.2 });
-
-elements.forEach(el => observer.observe(el));
-
-/* Go 404 */
+/* 404 */
 function go404(){
   window.location.href = "404.html";
 }
 
-/* FIXED LOGO CLICK */
-function goHome(){
-  window.location.href = "index.html";
+/* FADE */
+const faders =
+document.querySelectorAll('.fade');
+
+const observer =
+new IntersectionObserver(entries=>{
+
+  entries.forEach(entry=>{
+
+    if(entry.isIntersecting){
+
+      entry.target.classList.add('show');
+
+    }
+
+  });
+
+},{threshold:0.2});
+
+faders.forEach(el=>observer.observe(el));
+
+/* ======================= */
+/* PROJECT SLIDER */
+/* ======================= */
+
+const track =
+document.getElementById("projectTrack");
+
+const cards =
+document.querySelectorAll(".project-card");
+
+let index = 0;
+
+function moveSlide(direction){
+
+  const cardWidth =
+  cards[0].offsetWidth + 30;
+
+  index += direction;
+
+  /* LOOP */
+  if(index < 0){
+    index = cards.length - 3;
+  }
+
+  if(index > cards.length - 3){
+    index = 0;
+  }
+
+  track.style.transform =
+  `translateX(-${index * cardWidth}px)`;
 }
+
+/* AUTO SLIDE */
+setInterval(()=>{
+
+  moveSlide(1);
+
+},4000);
+
+/* CONTACT VALIDATION */
+function validateContact(){
+
+  let name =
+  document.getElementById("contactName").value.trim();
+
+  let email =
+  document.getElementById("contactEmail").value.trim();
+
+  let subject =
+  document.getElementById("contactSubject").value.trim();
+
+  let message =
+  document.getElementById("contactMessage").value.trim();
+
+  let valid = true;
+
+  /* CLEAR */
+  document.getElementById("nameError").innerText = "";
+  document.getElementById("emailError").innerText = "";
+  document.getElementById("subjectError").innerText = "";
+  document.getElementById("messageError").innerText = "";
+
+  /* NAME */
+  if(name === ""){
+
+    document.getElementById("nameError")
+    .innerText = "Name is required";
+
+    valid = false;
+  }
+
+  /* EMAIL */
+  let emailPattern =
+  /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+  if(!email.match(emailPattern)){
+
+    document.getElementById("emailError")
+    .innerText = "Enter valid email";
+
+    valid = false;
+  }
+
+  /* SUBJECT */
+  if(subject === ""){
+
+    document.getElementById("subjectError")
+    .innerText = "Subject is required";
+
+    valid = false;
+  }
+
+  /* MESSAGE */
+  if(message.length < 10){
+
+    document.getElementById("messageError")
+    .innerText =
+    "Message must be at least 10 characters";
+
+    valid = false;
+  }
+
+  /* SUCCESS */
+  if(valid){
+
+    window.location.href =
+    "404.html";
+  }
+
+}
+
+/* MOBILE MENU */
+
+function openMenu(){
+
+  document
+  .getElementById("mobileMenu")
+  .classList.add("active");
+}
+
+function closeMenu(){
+
+  document
+  .getElementById("mobileMenu")
+  .classList.remove("active");
+}
+
 </script>
 
 </body>
