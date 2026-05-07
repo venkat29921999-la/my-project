@@ -37,16 +37,29 @@ header{
   grid-template-columns:auto 1fr auto;
   align-items:center;
 
-  padding:15px 40px;
+  padding:0px 40px;
 
   background:rgba(0,0,0,0.5);
   backdrop-filter:blur(10px);
 }
 
 /* LOGO */
+/* HEADER LOGO */
 .logo img{
-  height:60px;
+
+  height:72px;
+
+  width:auto;
+
   cursor:pointer;
+
+  transition:0.4s;
+}
+
+/* HOVER */
+.logo img:hover{
+
+  transform:scale(1.05);
 }
 
 /* NAVBAR */
@@ -1706,7 +1719,7 @@ button{
   }
 
   .logo img{
-    height:50px;
+    height:58px;
   }
 
   /* HERO */
