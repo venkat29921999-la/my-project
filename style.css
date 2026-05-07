@@ -2348,3 +2348,98 @@ button{
 
   margin-top:auto;
 }
+
+/* ================================= */
+/* PERFECT PROJECT CARD ALIGNMENT */
+/* ================================= */
+
+.project-card{
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:space-between;
+
+  height:720px;
+}
+
+/* CONTENT */
+.project-content{
+
+  display:flex;
+
+  flex-direction:column;
+
+  flex:1;
+
+  justify-content:space-between;
+
+  height:100%;
+}
+
+/* CATEGORY */
+.project-content span{
+
+  min-height:25px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+}
+
+/* TITLE */
+.project-content h3{
+
+  min-height:140px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  text-align:center;
+
+  line-height:1.3;
+}
+
+/* DESCRIPTION */
+.project-content p{
+
+  min-height:170px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  text-align:center;
+
+  line-height:2;
+}
+
+/* BUTTON */
+.project-content button{
+
+  margin-top:auto;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .project-card{
+
+    height:auto;
+  }
+
+  .project-content h3,
+  .project-content p{
+
+    min-height:auto;
+  }
+
+}
