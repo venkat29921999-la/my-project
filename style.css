@@ -803,6 +803,7 @@ button:hover{
 
 /* CARD */
 .pricing-card{
+
   position:relative;
 
   background:rgba(255,255,255,0.07);
@@ -818,6 +819,14 @@ button:hover{
   transition:0.5s;
 
   overflow:hidden;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:space-between;
+
+  min-height:720px;
 }
 
 .pricing-card:hover{
@@ -919,6 +928,7 @@ button:hover{
 /* BUTTON */
 .pricing-card button{
   width:100%;
+  margin-top:auto;
 }
 
 /* MOBILE */
