@@ -2456,3 +2456,61 @@ button{
   }
 
 }
+
+/* ================================= */
+/* FOOTER SOCIAL ICONS */
+/* ================================= */
+
+.social-icons{
+
+  margin-top:30px;
+
+  display:flex;
+
+  gap:18px;
+}
+
+/* ICON */
+.social-icons a{
+
+  width:45px;
+  height:45px;
+
+  display:flex;
+
+  justify-content:center;
+  align-items:center;
+
+  border-radius:50%;
+
+  background:
+  rgba(255,255,255,0.08);
+
+  color:white;
+
+  font-size:18px;
+
+  text-decoration:none;
+
+  transition:0.4s;
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+}
+
+/* HOVER */
+.social-icons a:hover{
+
+  background:
+  linear-gradient(
+  135deg,
+  #00d4ff,
+  #6a00ff);
+
+  transform:
+  translateY(-6px)
+  scale(1.08);
+
+  box-shadow:
+  0 12px 25px rgba(0,212,255,0.25);
+}
