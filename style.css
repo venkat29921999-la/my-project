@@ -110,7 +110,7 @@ button:hover{
   linear-gradient(rgba(5,8,22,0.8),
   rgba(5,8,22,0.8)),
 
-  url('./Assest/photo-1516321318423-f06f85e504b3.webp');
+  url('./Assest/hero.webp');
 
   background-size:cover;
   background-position:center;
@@ -1652,6 +1652,7 @@ button{
 .about-image img{
   width:100%;
   max-width:500px;
+  height: 270px;
 }
 
 /* SERVICE ICON */
@@ -2392,7 +2393,7 @@ button{
 /* PERFECT PROJECT CARD ALIGNMENT */
 /* ================================= */
 
-.project-card{
+/* .project-card{
 
   display:flex;
 
@@ -2401,10 +2402,10 @@ button{
   justify-content:space-between;
 
   height:720px;
-}
+} */
 
 /* CONTENT */
-.project-content{
+/* .project-content{
 
   display:flex;
 
@@ -2415,12 +2416,12 @@ button{
   justify-content:space-between;
 
   height:100%;
-}
+} */
 
 /* CATEGORY */
 .project-content span{
 
-  min-height:25px;
+  /* min-height:25px; */
 
   display:flex;
 
@@ -2432,7 +2433,7 @@ button{
 /* TITLE */
 .project-content h3{
 
-  min-height:140px;
+  /* min-height:140px; */
 
   display:flex;
 
@@ -2448,7 +2449,7 @@ button{
 /* DESCRIPTION */
 .project-content p{
 
-  min-height:170px;
+  /* min-height:170px; */
 
   display:flex;
 
@@ -2871,3 +2872,112 @@ object-fit: cover;
 
 }
 
+/* ================================= */
+/* FINAL PROJECT CARD FIX */
+/* ================================= */
+
+.project-card{
+
+    min-width:calc(33.33% - 18px);
+
+    background:white;
+
+    color:black;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:700px;
+}
+
+/* SAME IMAGE HEIGHT */
+.project-card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+/* CONTENT */
+.project-content{
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:35px 25px 25px;
+}
+
+/* CATEGORY */
+.project-content span{
+
+    display:block;
+
+    text-align:center;
+
+    height:30px;
+}
+
+/* TITLE */
+.project-content h3{
+    min-height:120px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    line-height:1.3;
+
+    font-size:28px;
+
+    padding:0 25px;
+
+    margin-top:25px;
+}
+
+/* DESCRIPTION */
+.project-content p{
+
+    height:100px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    line-height:1.7;
+
+    color:#555;
+}
+
+/* BUTTON */
+.project-content button{
+
+    margin-top:auto;
+
+    width:100%;
+}
+.project-prev,
+.project-next{
+    width:65px;
+    height:65px;
+
+    z-index:100;
+
+    top:45%;
+}
