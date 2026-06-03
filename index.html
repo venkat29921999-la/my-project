@@ -1,1374 +1,956 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Stackly Corporate</title>
 
-<link rel="stylesheet" href="style.css">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Stackly IT Solutions</title>
+
+<link rel="stylesheet"
+href="style.css">
+
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
 <body>
 
-  <!-- HEADER -->
-   <!-- HEADER -->
+<!-- HEADER -->
+
 <header>
 
-  <!-- LOGO -->
-  <div class="logo">
+    <div class="logo">
 
-    <a href="index.html">
+        <a href="index.html">
 
-      <div class="logo">
-  <img src="./Assest/stacklylogo (1).webp">
+            <img src="./Assest/stacklylogo (1).webp"
+                 alt="Stackly Logo">
+
+        </a>
+
+    </div>
+
+    <nav id="mobileMenu">
+
+    <a href="#home" onclick="toggleMenu()">Home</a>
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#services" onclick="toggleMenu()">Services</a>
+    <a href="#projects" onclick="toggleMenu()">Projects</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+
+    <button class="mobile-login"
+            onclick="go404()">
+        Login
+    </button>
+
+</nav>
+
+    
+<div class="menu-toggle" onclick="toggleMenu()">
+    <i id="menuIcon" class="fas fa-bars"></i>
 </div>
+    <button onclick="go404()">
 
-    </a>
+        Login
 
-  </div>
-
-  <!-- DESKTOP NAV -->
-  <nav class="nav-center">
-
-    <a href="#home">Home</a>
-
-    <a href="404.html">Services</a>
-
-    <a href="404.html">Projects</a>
-
-    <a href="404.html">Plans</a>
-
-    <a href="404.html">Contact</a>
-
-  </nav>
-
-  <!-- LOGIN -->
-   <a href="404.html">
-  <button>Login</button>
-</a>
-  <!-- <button onclick="window.location.href='signin.html'">
-    Login
-  </button> -->
-
-  <!-- MOBILE MENU ICON -->
-  <div class="menu-toggle" onclick="openMenu()">
-
-    ☰
-
-  </div>
+    </button>
 
 </header>
 
-<!-- MOBILE SIDEBAR -->
-<div class="mobile-menu" id="mobileMenu">
 
-  <!-- CLOSE -->
-  <div class="close-btn"
-  onclick="closeMenu()">
-    ✕
-  </div>
+<!-- HERO SECTION -->
 
-  <a href="#home" onclick="closeMenu()">
-    Home
-  </a>
+<section class="hero"
+         id="home">
 
-  <a href="404.html">
-    Services
-  </a>
+    <div class="hero-content">
 
-  <a href="404.html">
-    Projects
-  </a>
+        <span>
 
-  <a href="404.html">
-    Plans
-  </a>
+            STACKLY IT SOLUTIONS
 
-  <a href="404.html">
-    Contact
-  </a>
+        </span>
 
-  <button onclick="window.location.href='404.html'">
-    Login
-</button>
+        <h1>
 
-</div>
+            Accelerating Digital
+            Transformation Through
+            Technology
 
-<section class="hero" id="home">
+        </h1>
 
-  <div class="hero-text fade">
+        <p>
 
-   <h1>
-Smart Logistics & Supply Chain Solutions
-For Modern Businesses
-</h1>
+            We provide software development,
+            cloud solutions, cybersecurity,
+            AI automation and enterprise
+            digital solutions.
 
-    <p>
-Track shipments, manage fleets,
-optimize delivery routes and monitor
-warehouse operations through one
-powerful logistics platform.
-</p>
+        </p>
 
-    <div class="hero-buttons">
+        <div class="hero-buttons">
 
-      <button onclick="go404()">
-  Get Consultation
-</button>
+            <button onclick="go404()">
 
-      <button class="secondary-btn"
-      onclick="go404()">
-        Explore More
-      </button>
+                Get Started
+
+            </button>
+
+            <button class="secondary-btn"
+                    onclick="go404()">
+
+                Explore Services
+
+            </button>
+
+        </div>
 
     </div>
 
-  </div>
+    <div class="hero-image">
 
-  <img class="hero-image fade"
-  src="./Assest/hero final.webp">
+        <img src="./Assest/k4oGf9vqPa4ShXid5105mt2EoDoWIchCH4odT1pJGodHDbSMtmkacwExkEC-oj31oO24dm1o6f3dd0Skd5A-wpXX19dNY5W8KhiAvoHIOic3OenDa-SmfHGVvF6_an7Iunf2f6C1BG7pXTeQ_I2w59YmOZGsDj4CP74fM7Dmx08QGggJlN-M2WQ7kAVcL3vz.webp"
+             alt="Hero Image">
+
+    </div>
 
 </section>
 
-<!-- STATS -->
-<section class="stats fade">
+<!-- TRUSTED CLIENTS -->
 
-  <div class="stat-box">
-    <h2>15k+</h2>
-    <p>Deliveries</p>
-  </div>
+<section class="clients">
 
-  <div class="stat-box">
-    <h2>500+</h2>
-    <p>Fleet Vehicles</p>
-  </div>
+    <div class="section-title">
 
-  <div class="stat-box">
-    <h2>200+</h2>
-    <p>Warehouses</p>
-  </div>
+        <span>
 
-  <div class="stat-box">
-    <h2>98%</h2>
-    <p>On-Time Delivery</p>
-  </div>
+            TRUSTED CLIENTS
 
-</section>
+        </span>
 
-<!-- BRANDS -->
-<!-- TRUSTED COMPANIES -->
-<section class="brands fade">
+        <h2>
 
-  <div class="section-title">
+            Trusted By Leading Companies
 
-    <span>TRUSTED BY COMPANIES</span>
-
-    <h2>
-      Trusted By Global Logistics Partners
-    </h2>
-
-    <p>
-      Companies worldwide trust Stackly
-      for enterprise software and digital solutions.
-    </p>
-
-  </div>
-
-  <div class="brand-logos">
-
-    <img src="./Assest/DHL.webp">
-
-    <img src="./Assest/fedex.webp">
-
-    <img src="./Assest/ups.webp">
-
-    <img src="./Assest/blue dart.webp">
-
-    <img src="./Assest/DTDC.webp">
-
-
-  <img src="./Assest/Delhivery.webp">
-
-  <img src="./Assest/Maersk.webp">
-
-  <img src="./Assest/amazon.webp">
-
-  <!-- <img src="./Assest/github-icon-1[1].webp"> -->
-
-
-  </div>
-
-</section>
-
-<!-- SERVICES -->
-<section class="features" id="services">
-
-  <div class="section-title fade">
-
-    <span>OUR SERVICES</span>
-
-    <h2>
-      Smart Logistics Solutions For Modern Businesses
-    </h2>
-
-    <p>
-      Our logistics solutions help businesses manage
-deliveries, warehouses, fleets and supply chains
-through one centralized platform
-    </p>
-
-  </div>
-
-  <div class="cards">
-
-    <!-- CARD 1 -->
-    <div class="card fade">
-
-      <div class="service-icon">
-        <img src="./Assest/ao88posp89heyrq42fzu.webp">
-      </div>
-
-      <h3>Shipment Tracking</h3>
-
-      <p>
-        Track shipments in real time with
-GPS monitoring and delivery updates.
-      </p>
-
-      <ul>
-        <li>✔ Real-Time Tracking</li>
-        <li>✔ GPS Monitoring</li>
-        <li>✔ Delivery Updates</li>
-      </ul>
-
-      <button onclick="go404()">
-        Explore Service
-      </button>
+        </h2>
 
     </div>
 
-    <!-- CARD 2 -->
-    <div class="card fade">
+    <div class="client-logos">
 
-      <div class="service-icon">
-        <img src="./Assest/mnpiff9sgajfflud3q0y.webp">
-      </div>
+        <img src="./Assest/BHUrcLXepv5MfTZzI3nQs0Rm3Wi43_N6zdfxF0Ms62eRROIPiUnmJya-3VVbpAIaigxOFp_lAnvlHh03x6OTp7Xo6bcHSdiJemJLa_uigm3PCLQVWs69J9fYhnAc4zKdUH3WCrfjoHDsOtpOJyfr7xR-pJZguJuAXd8oYaqhHM5pEU7Gj2U1Uo76-IHKlq0s.webp">
 
-      <h3>Fleet Management</h3>
+        <img src="./Assest/Kpnsph5vUsl-Zyyl5h3bFKmEyQNmxaeVqe_zacutKAcZp9b7JMkyn5czxCpvjgmh5STZAhPmEsMaBx8Hfz7UxeuWFDO2tl7OBI7Z4HxRLQmNyHAnMfcFuVoR1OqkjlGgJ9335uM6KCK0jPArORe9AHGo1XK1AlIsywBXE3aDVo7r1zIz2AEflIzQgl8Qi0_0.webp">
 
-      <p>
-         Manage vehicles, drivers and fuel
-consumption efficiently.
-      </p>
+        <img src="./Assest/PElTOkW1cUsYU_oxO60kEbe43B-TZmkFDhwqMZEDTLLDJdcMvsybpFNvikVxbHv8zHVS9PMJPF-gpGG_hoIvN1_MNWMASbH9rzZjTw1zNkINCBkoL1gq2YiDpTCSRPSDh_m9OYvW80OTjCSupweC9WwTDX4ufRFtkBBx_B2LLn-7ek6js3NsPzi_wMTcTwUF.webp">
 
-      <ul>
-        <li>✔ Vehicle Tracking</li>
-        <li>✔ Driver Monitoring</li>
-        <li>✔ Fuel Analytics</li>
-      </ul>
+        <img src="./Assest/DtcOKgw1Vf9LCiQsFPKUXYhoRI2uQTpJ46kLL9HjKXryZngrZAxn4dLTwBxHsD_86ksasS_OvqtayCMM_jTv1PP5pR9yyKWBYbNJffieDEA3TWStyUkH4FRoxJ0suTRKPFXBt9s6mS4g3VrqYZevLm7VaoSRn1LZfaFVoZh1w5k5LlEUSJxFQi6mLN6guppV.webp">
 
-      <button onclick="go404()">
-        Explore Service
-      </button>
+        <img src="./Assest/18.webp">
+
+        <img src="./Assest/19.webp">
 
     </div>
-
-    <!-- CARD 3 -->
-    <div class="card fade">
-
-      <div class="service-icon">
-        <img src="./Assest/xeinhsmh1jaswntqqh1a.webp">
-      </div>
-
-      <h3>Warehouse</h3>
-
-      <p>
-        Manage warehouse inventory and
-stock movement efficiently.
-      </p>
-
-      <ul>
-        <li>✔ Order Processing</li>
-        <li>✔ Stock Reports</li>
-        <li>✔ Inventory Control</li>
-      </ul>
-
-      <button onclick="go404()">
-        Explore Service
-      </button>
-
-    </div>
-
-    <!-- CARD 4 -->
-    <div class="card fade">
-
-      <div class="service-icon">
-        <img src="./Assest/hero1.webp">
-      </div>
-
-      <h3>Route Optimization</h3>
-
-      <p>
-        Optimize delivery routes and reduce
-transportation costs.
-      </p>
-
-      <ul>
-        <li>✔ Smart Routing</li>
-        <li>✔ Traffic Analysis</li>
-        <li>✔ Cost Reduction</li>
-      </ul>
-
-      <button onclick="go404()">
-        Explore Service
-      </button>
-
-    </div>
-
-    <!-- CARD 5 -->
-    <div class="card fade">
-
-      <div class="service-icon">
-        <img src="./Assest/jemwevzfqmk4dp1dl3ra.webp">
-      </div>
-
-      <h3>Supply Chain Analytics </h3>
-
-      <p>
-        Monitor logistics performance
-through real-time dashboards.
-      </p>
-
-      <ul>
-        <li>✔ KPI Monitoring</li>
-        <li>✔ Live Reports</li>
-        <li>✔ Data Insights</li>
-      </ul>
-
-      <button onclick="go404()">
-        Explore Service
-      </button>
-
-    </div>
-
-    <!-- CARD 6 -->
-    <div class="card fade">
-
-      <div class="service-icon">
-        <img src="./Assest/jhwhcll2f9n97yaexb5d.webp">
-      </div>
-
-      <h3>Customer Delivery</h3>
-
-      <p>
-        Allow customers to track orders
-and receive delivery notifications.
-      </p>
-
-      <ul>
-        <li>✔ Order Tracking</li>
-        <li>✔ Notifications</li>
-        <li>✔ Customer Support</li>
-      </ul>
-
-      <button onclick="go404()">
-        Explore Service
-      </button>
-
-    </div>
-
-  </div>
 
 </section>
 
 <!-- ABOUT -->
-<section class="about fade">
 
-  <div class="about-image">
+<section class="about"
+         id="about">
 
-    <img src="./Assest/c97nbycngfzlmlazxp1w.webp">
+    <div class="about-image">
 
-  </div>
-
-  <div class="about-content">
-
-    <h2>Why Choose CargoFlow Logistics?</h2>
-
-
-
-    <p>
-      CargoFlow Logistics provides complete
-visibility into transportation, inventory,
-delivery operations and warehouse activities
-for businesses worldwide.
-    </p>
-
-    <div class="about-points">
-
-      <div>✔ Live Shipment Tracking</div>
-      <div>✔ Fleet Monitoring</div>
-      <div>✔ Warehouse Automation</div>
-      <div>✔ Route Optimization</div>
+        <img src="./Assest/NC8FGbsGIR7beT-1sRcQbod8f23n_FKdDAmpd6r2hZv6oHEK4ezQuc6pxA3MrgbzbJZON4rWy1Ho0Q_OH4Vh5gXjBGYCb8wkiqZV7APYw1jRxSacCTqNGytyWCy6VuohZOUp7ce8pZTHlbpKY0LxeuWWyeEsWGgBiK6_1id1AC0IP32kPMPI3qJD4lgO2uSe.webp"
+             alt="About">
 
     </div>
 
-  </div>
+    <div class="about-content">
 
-</section>
+        <span>
 
-<!-- PROJECTS -->
-<!-- PROJECTS -->
-<section class="gallery" id="projects">
+            ABOUT US
 
-  <div class="section-title fade">
+        </span>
 
-    <span>OUR PROJECTS</span>
+        <h2>
+
+            Driving Digital Innovation
+
+        </h2>
+
+        <p>
+
+            Stackly IT Solutions helps
+            businesses modernize operations
+            through software development,
+            cloud services and AI-powered
+            applications.
+
+        </p>
+
+        <div class="about-points">
+
+            <div>✔ Agile Development</div>
+
+            <div>✔ Cloud Ready Solutions</div>
+
+            <div>✔ Secure Applications</div>
+
+            <div>✔ 24/7 Support</div>
+
+        </div>
+
+    </div>
+    </section>
+<!-- ========================= -->
+
+<!-- SERVICES -->
+
+<!-- ========================= -->
+
+<section class="services"
+         id="services">
+
+<div class="section-title">
+
+    <span>
+        OUR SERVICES
+    </span>
 
     <h2>
-      Smart Logistics Management Solutions
+        Smart IT Solutions
     </h2>
 
     <p>
-      Explore enterprise-grade applications,
-      SaaS systems and modern business platforms
-      developed by Stackly.
+        Technology services that help
+        businesses grow digitally.
     </p>
-
-  </div>
-
-  <!-- SLIDER -->
-  <div class="project-slider">
-
-    <!-- LEFT BUTTON -->
-    <button class="slide-btn left"
-    onclick="moveSlide(-1)">
-      ❮
-    </button>
-
-    <!-- PROJECT WRAPPER -->
-    <div class="project-container">
-
-      <div class="project-track" id="projectTrack">
-
-        <!-- CARD 1 -->
-        <div class="project-card fade">
-
-          <img src="./Assest/truck tracking.webp">
-
-          <div class="project-content">
-
-            <span>Tracking</span>
-
-            <h3>Smart Shipment Tracking</h3>
-
-            <p>
-              Real-time shipment tracking with
-GPS monitoring and notifications.
-            </p>
-
-            <button onclick="go404()">
-  Explore Solution
-</button>
-
-          </div>
-
-        </div>
-
-        <!-- CARD 2 -->
-        <div class="project-card fade">
-
-          <img src="./Assest/shaah-shahidh--subrrYxv8A-unsplash.webp">
-
-          <div class="project-content">
-
-            <span>Fleet</span>
-
-            <h3>Smart Fleet Management</h3>
-
-            <p>
-              Monitor vehicles, drivers and
-fuel consumption.
-            </p>
-
-            <button onclick="go404()">
-  Explore Solution
-</button>
-
-          </div>
-
-        </div>
-
-        <!-- CARD 3 -->
-        <div class="project-card fade">
-
-          <img src="./Assest/mt565e36pjmx04xtz3hi.webp">
-
-          <div class="project-content">
-
-            <span>Warehouse</span>
-
-            <h3>Warehouse Operations Hub</h3>
-
-            <p>
-               Manage inventory and warehouse
-operations efficiently.
-            </p>
-
-            <button onclick="go404()">
-  Explore Solution
-</button>
-
-          </div>
-
-        </div>
-
-        <div class="project-card fade">
-
-          <img src="./Assest/supply.webp">
-
-          <div class="project-content">
-
-            <span>Supply Chain</span>
-
-            <h3>Supply Chain Analytics</h3>
-
-            <p>
-             Business intelligence dashboard
-for logistics operations.
-            </p>
-
-            <button onclick="go404()">
-  Explore Solution
-</button>
-
-          </div>
-
-        </div>
-        <!-- CARD 4 -->
-        <div class="project-card fade">
-
-          <img src="./Assest/delivery.webp">
-
-          <div class="project-content">
-
-            <span>Delivery</span>
-
-            <h3>Last Mile Delivery Hub</h3>
-
-            <p>
-              Track parcel delivery and optimize
-delivery performance.
-            </p>
-
-            <button onclick="go404()">
-  Explore Solution
-</button>
-
-          </div>
-
-        </div>
-
-
-        <!-- CARD 6 -->
-        <div class="project-card fade">
-
-          <img src="./Assest/route opti.webp">
-
-          <div class="project-content">
-
-            <span>Optimization</span>
-
-            <h3>Route Optimization Hub</h3>
-
-            <p>
-              AI-powered route planning and
-delivery optimization system.
-            </p>
-
-            <button onclick="go404()">
-  Explore Solution
-</button>
-
-          </div>
-
-        </div>
-
-        <!-- CARD 7 -->
-        <!-- <div class="project-card fade">
-
-          <img src="./Assest/photo-1504384308090-c894fdcc538d_11zon.webp">
-
-          <div class="project-content">
-
-            <span>Startup</span>
-
-            <h3>Startup SaaS Platform</h3>
-
-            <p>
-              Cloud-based SaaS application with
-    subscription management and customer engagement tools.
-            </p>
-
-            <button onclick="go404()">
-              View Project
-            </button>
-
-          </div>
-
-        </div> -->
-
-        <!-- CARD 8 -->
-        <!-- <div class="project-card fade">
-
-          <img src="./Assest/photo-1451187580459-43490279c0fa_11zon.webp">
-
-          <div class="project-content">
-
-            <span>Technology</span>
-
-            <h3>AI Cloud Platform</h3>
-
-            <p>
-              AI AI cloud platform enabling automation,
-    predictive analytics and enterprise data processing.
-            </p>
-
-            <button onclick="go404()">
-              View Project
-            </button>
-
-          </div>
-
-        </div> -->
-
-      </div>
-
-    </div>
-
-    <!-- RIGHT BUTTON -->
-    <button class="slide-btn right"
-    onclick="moveSlide(1)">
-      ❯
-    </button>
-
-  </div>
-
-</section>
-
-<!-- TESTIMONIAL -->
-<!-- TESTIMONIAL -->
-<section class="testimonial fade">
-
-  <div class="testimonial-title">
-
-    <span>CLIENT REVIEWS</span>
-
-    <h2>
-      What Our Logistics Clients Say
-    </h2>
-
-    <p>
-      Logistics companies rely on CargoFlow
-to improve delivery efficiency,
-warehouse operations and fleet management.
-    </p>
-
-  </div>
-
-  <div class="testimonial-wrapper">
-
-    <!-- CARD 1 -->
-    <div class="testimonial-card-modern">
-
-      <div class="quote-icon">
-        ❝
-      </div>
-
-      <p>
-        CargoFlow helped us track shipments
-in real time and improve delivery
-accuracy across multiple locations.
-      </p>
-
-      <div class="client-info">
-
-        <img src="./Assest/32[1].webp">
-
-        <div>
-
-          <h4>Arun Kumar<h4>
-
-          <span>Transport Manager</span>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- CARD 2 -->
-    <div class="testimonial-card-modern active-card">
-
-      <div class="quote-icon">
-        ❝
-      </div>
-
-      <p>
-        The fleet monitoring dashboard helped us
-reduce fuel costs and improve driver productivity.
-      </p>
-
-      <div class="client-info">
-
-        <img src="./Assest/44[1].webp">
-
-        <div>
-
-          <h4>Priya Sharma</h4>
-
-          <span>Warehouse Supervisor</span>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="testimonial-card-modern">
-
-      <div class="quote-icon">
-        ❝
-      </div>
-
-      <p>
-        Warehouse automation features helped us
-manage inventory faster and reduce errors.
-      </p>
-
-      <div class="client-info">
-
-        <img src="./Assest/51[1].webp">
-
-        <div>
-
-          <h4>Ravi Kumar</h4>
-
-          <span>Supply Chain Director</span>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- PRICING -->
-<section class="pricing" id="plans">
-
-  <div class="pricing-title fade">
-
-    <span>PRICING PLANS</span>
-
-    <h2>
-      Flexible Plans For Every Business
-    </h2>
-
-    <p>
-      Choose the perfect plan for your startup,
-      growing business or enterprise company.
-    </p>
-
-  </div>
-
-  <div class="pricing-wrapper">
-
-    <!-- STARTER -->
-    <div class="pricing-card fade">
-
-      <div class="plan-image">
-
-        <img src="./Assest/Starter business concept image, entry-level business tier, startup or beginner workplace setting.webp">
-
-      </div>
-
-      <h3>Starter</h3>
-
-      <h1>
-        ₹999
-        <span>/month</span>
-      </h1>
-
-      <p class="plan-desc">
-        Perfect for small logistics businesses.
-      </p>
-
-      <ul>
-
-        <li>✔ Shipment Tracking</li>
-
-        <li>✔ Delivery Notifications</li>
-
-        <li>✔ Basic Reports</li>
-
-        <li>✔ Email Support</li>
-
-        <li>✔ 100 Deliveries / Month</li>
-
-      </ul>
-
-      <button onclick="go404()">
-        Start Tracking
-      </button>
-
-    </div>
-
-    <!-- PROFESSIONAL -->
-    <div class="pricing-card featured-plan fade">
-
-      <div class="popular-badge">
-        MOST POPULAR
-      </div>
-
-      <div class="plan-image">
-
-        <img src="./Assest/Professional business concept image, mid-level business tier, professional workplace setting.webp">
-
-      </div>
-
-      <h3>Professional</h3>
-
-      <h1>
-        ₹2499
-        <span>/month</span>
-      </h1>
-
-      <p class="plan-desc">
-        Ideal for growing logistics operations.
-      </p>
-
-      <ul>
-
-        <li>✔ Fleet Management</li>
-
-        <li>✔ Route Optimization</li>
-
-        <li>✔ Warehouse Tracking</li>
-
-        <li>✔ Analytics Dashboard</li>
-
-        <li>✔ Priority Support</li>
-
-      </ul>
-
-      <button onclick="go404()">
-        Explore Plan
-      </button>
-
-    </div>
-
-    <!-- ENTERPRISE -->
-    <div class="pricing-card fade">
-
-      <div class="plan-image">
-
-        <img src="./Assest/Enterprise business concept image, corporate professional setting, high-level business tier.webp">
-
-      </div>
-
-      <h3>Enterprise</h3>
-
-      <h1>
-        Custom Pricing
-      </h1>
-
-      <p class="plan-desc">
-        For large logistics and supply chain companies.
-      </p>
-
-      <ul>
-
-        <li>✔ Unlimited Shipments</li>
-
-        <li>✔ AI Route Planning</li>
-
-        <li>✔ Supply Chain Analytics</li>
-
-        <li>✔ Dedicated Manager</li>
-
-        <li>✔ 24/7 Support</li>
-
-      </ul>
-
-      <button onclick="go404()">
-        Contact Sales
-      </button>
-
-    </div>
-
-  </div>
-
-</section>
-<!-- CONTACT -->
-<section class="contact fade" id="contact">
-
-  <div class="section-title">
-
-    <span>CONTACT US</span>
-
-    <h2>
-      Let's Optimize Your Logistics Operations
-    </h2>
-
-    <p>
-      Contact CargoFlow Logistics for shipment tracking,
-fleet management and warehouse automation solutions.
-    </p>
-
-  </div>
-
-  <div class="contact-container">
-
-    <!-- INFO -->
-    <div class="contact-info">
-
-      <h3>Get In Touch</h3>
-
-      <p>
-  <i class="fa-solid fa-envelope footer-contact-icon"></i>
-  info@stackly.com
-</p>
-
-<p>
-  <i class="fa-solid fa-phone footer-contact-icon"></i>
-  +91 9999955555
-</p>
-
-<p>
-  <i class="fa-solid fa-location-dot footer-contact-icon"></i>
-  Chennai, Tamil Nadu
-</p>
-
-<p>
-  <i class="fa-solid fa-clock footer-contact-icon"></i>
-  Mon - Sat : 9AM - 7PM
-</p>
-
-    </div>
-
-    <!-- FORM -->
-    <div class="contact-form">
-
-      <!-- NAME -->
-      <input
-      type="text"
-      id="contactName"
-      placeholder="Your Name">
-
-      <small class="contact-error"
-      id="nameError"></small>
-
-      <!-- EMAIL -->
-      <input
-      type="email"
-      id="contactEmail"
-      placeholder="Your Email">
-
-      <small class="contact-error"
-      id="emailError"></small>
-
-      <!-- SUBJECT -->
-      <input
-      type="text"
-      id="contactSubject"
-      placeholder="Subject">
-
-      <small class="contact-error"
-      id="subjectError"></small>
-
-      <!-- MESSAGE -->
-      <textarea
-      rows="5"
-      id="contactMessage"
-      placeholder="Your Message"></textarea>
-
-      <small class="contact-error"
-      id="messageError"></small>
-
-      <!-- BUTTON -->
-      <button onclick="validateContact()">
-        Send Message
-      </button>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- FOOTER -->
-<!-- FOOTER -->
-<footer class="footer">
-
-  <div class="footer-top">
-
-    <!-- COMPANY -->
-    <div class="footer-box">
-
-      <!-- LOGO -->
-      <a href="index.html">
-
-        <img
-        src="./Assest/stacklylogo (1).webp"
-        class="footer-logo">
-
-      </a>
-
-      <p>
-        CargoFlow Logistics helps businesses manage
-shipments, fleets, warehouses and supply chains
-through intelligent tracking and analytics solutions.
-      </p>
-
-      <!-- SOCIAL -->
-<div class="social-icons">
-
-  <a href="404.html">
-    <i class="fab fa-facebook-f"></i>
-  </a>
-
-  <a href="404.html">
-    <i class="fab fa-twitter"></i>
-  </a>
-
-  <a href="404.html">
-    <i class="fab fa-linkedin-in"></i>
-  </a>
-
-  <a href="404.html">
-    <i class="fab fa-instagram"></i>
-  </a>
 
 </div>
 
-    </div>
+<div class="service-grid">
 
-    <!-- QUICK LINKS -->
-    <div class="footer-box">
+    <div class="service-card">
 
-      <h3>Quick Links</h3>
+        <img src="./Assest/11.webp"
+             alt="Web Development">
 
-      <ul>
+        <h3>
+            Web Development
+        </h3>
 
-        <li>
-          <a href="index.html">
-            Home
-          </a>
-        </li>
+        <p>
+            Modern websites and enterprise
+applications for businesses.
+        </p>
 
-        <li>
-          <a href="404.html">
-            Services
-          </a>
-        </li>
-
-        <li>
-          <a href="404.html">
-            Projects
-          </a>
-        </li>
-
-        <li>
-          <a href="404.html">
-            Plans
-          </a>
-        </li>
-
-        <li>
-          <a href="404.html">
-            Contact
-          </a>
-        </li>
-
-      </ul>
+        <button onclick="go404()">
+            Explore Service
+        </button>
 
     </div>
 
-    <!-- SERVICES -->
-    <div class="footer-box">
+    <div class="service-card">
 
-      <h3>Services</h3>
+        <img src="./Assest/12.webp"
+             alt="Mobile Apps">
 
-      <ul>
+        <h3>
+            Mobile App Development
+        </h3>
 
-        <li>
-          <a href="404.html">
-            Shipment Tracking
-          </a>
-        </li>
+        <p>
+            Android and iOS applications
+for modern businesses.
+        </p>
 
-        <li>
-          <a href="404.html">
-            Fleet Management
-          </a>
-        </li>
-
-        <li>
-          <a href="404.html">
-            Warehouse Management
-          </a>
-        </li>
-
-        <li>
-          <a href="404.html">
-            Route Optimization
-          </a>
-        </li>
-
-        <li>
-          <a href="404.html">
-            Supply Chain Analytics
-          </a>
-        </li>
-
-      </ul>
+        <button onclick="go404()">
+            Explore Service
+        </button>
 
     </div>
 
-    <!-- CONTACT -->
-    <div class="footer-box">
+    <div class="service-card">
 
-      <h3>Contact Us</h3>
+        <img src="./Assest/13.webp"
+             alt="Cloud Solutions">
 
-      <p>
-  <i class="fa-solid fa-envelope footer-contact-icon"></i>
-  info@stackly.com
-</p>
+        <h3>
+            Cloud Solutions
+        </h3>
 
-<p>
-  <i class="fa-solid fa-phone footer-contact-icon"></i>
-  +91 9999955555
-</p>
+        <p>
+            Secure cloud infrastructure
+and migration services.
+        </p>
 
-<p>
-  <i class="fa-solid fa-location-dot footer-contact-icon"></i>
-  Chennai, Tamil Nadu
-</p>
-
-<p>
-  <i class="fa-solid fa-clock footer-contact-icon"></i>
-  Mon - Sat : 9AM - 7PM
-</p>
+        <button onclick="go404()">
+            Explore Service
+        </button>
 
     </div>
 
-  </div>
+    <div class="service-card">
 
-  <!-- BOTTOM -->
-  <div class="footer-bottom">
+        <img src="./Assest/14.webp"
+             alt="Cyber Security">
+
+        <h3>
+            Cyber Security
+        </h3>
+
+        <p>
+            Protect systems, networks
+and business data.
+        </p>
+
+        <button onclick="go404()">
+            Explore Service
+        </button>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<!-- ========================= -->
+
+<!-- DEVELOPMENT PROCESS -->
+
+<!-- ========================= -->
+
+<section class="process">
+
+    <div class="section-title">
+
+        <span>OUR PROCESS</span>
+
+        <h2>How We Build Digital Solutions</h2>
+
+        <p>
+            A streamlined process that ensures quality,
+            speed and customer satisfaction.
+        </p>
+
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="circle">🔍</div>
+            <h3>Discovery</h3>
+            <p>Understanding business requirements and goals.</p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="circle">📋</div>
+            <h3>Planning</h3>
+            <p>Creating strategy, architecture and roadmap.</p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="circle">💻</div>
+            <h3>Development</h3>
+            <p>Building scalable and secure applications.</p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="circle">🧪</div>
+            <h3>Testing</h3>
+            <p>Quality assurance and performance testing.</p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="circle">🚀</div>
+            <h3>Deployment</h3>
+            <p>Launching applications to production.</p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="circle">🎧</div>
+            <h3>Support</h3>
+            <p>Continuous maintenance and improvements.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+
+<!-- TECHNOLOGIES -->
+
+<!-- ========================= -->
+
+<section class="technologies"
+         id="technologies">
+
+
+<div class="section-title">
+
+    <span>
+        TECHNOLOGIES
+    </span>
+
+    <h2>
+        Technology Stack
+    </h2>
 
     <p>
-      © 2026 Stackly Technologies.
-      All Rights Reserved.
+        Modern technologies used
+        by our expert team.
     </p>
 
-  </div>
+</div>
+
+<div class="tech-grid">
+
+    <div><i class="fab fa-java"></i> Java</div>
+
+    <div><i class="fas fa-leaf"></i> Spring Boot</div>
+
+    <div><i class="fab fa-react"></i> React</div>
+
+    <div><i class="fab fa-node-js"></i> Node.js</div>
+
+    <div><i class="fab fa-python"></i> Python</div>
+
+    <div><i class="fas fa-mobile-alt"></i> Flutter</div>
+
+    <div><i class="fab fa-aws"></i> AWS</div>
+
+    <div><i class="fab fa-microsoft"></i> Azure</div>
+
+    <div><i class="fas fa-database"></i> MongoDB</div>
+
+    <div><i class="fas fa-server"></i> MySQL</div>
+
+</div>
+</section>
+
+<!-- ========================= -->
+
+<!-- PROJECTS -->
+
+<!-- ========================= -->
+
+<section class="projects"
+         id="projects">
+
+
+<div class="section-title">
+
+    <span>
+        FEATURED PROJECTS
+    </span>
+
+    <h2>
+        Success Stories
+    </h2>
+
+    <p>
+        Innovative solutions developed
+        for modern businesses.
+    </p>
+
+</div>
+
+<div class="project-grid">
+
+    <div class="project-card">
+
+        <img src="./Assest/15.webp"
+             alt="Project">
+
+        <h3>
+            HR Management System
+        </h3>
+
+        <p>
+            Employee management,
+            attendance and payroll.
+        </p>
+
+        <button onclick="go404()">
+
+            View Project
+
+        </button>
+
+    </div>
+
+    <div class="project-card">
+
+        <img src="./Assest/16.webp"
+             alt="Project">
+
+        <h3>
+            Hospital Management
+        </h3>
+
+        <p>
+            Healthcare platform for
+            hospitals and clinics.
+        </p>
+
+        <button onclick="go404()">
+
+            View Project
+
+        </button>
+
+    </div>
+
+    <div class="project-card">
+
+        <img src="./Assest/17.webp"
+             alt="Project">
+
+        <h3>
+            AI Chatbot Solution
+        </h3>
+
+        <p>
+            AI-powered customer
+            support automation.
+        </p>
+
+        <button onclick="go404()">
+
+            View Project
+
+        </button>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<!-- ========================= -->
+
+<!-- STATISTICS -->
+
+<!-- ========================= -->
+
+<section class="stats">
+
+
+<div class="stat-box">
+
+    <h2>500+</h2>
+
+    <p>
+        Projects Delivered
+    </p>
+
+</div>
+
+<div class="stat-box">
+
+    <h2>200+</h2>
+
+    <p>
+        Happy Clients
+    </p>
+
+</div>
+
+<div class="stat-box">
+
+    <h2>50+</h2>
+
+    <p>
+        IT Experts
+    </p>
+
+</div>
+
+<div class="stat-box">
+
+    <h2>15+</h2>
+
+    <p>
+        Countries Served
+    </p>
+
+</div>
+
+
+</section>
+
+<!-- ========================= -->
+
+<!-- TESTIMONIALS -->
+
+<!-- ========================= -->
+
+<section class="testimonials">
+
+    <div class="section-title">
+
+        <span>TESTIMONIALS</span>
+
+        <h2>What Our Clients Say</h2>
+
+        <p>
+            Trusted by businesses worldwide.
+        </p>
+
+    </div>
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+
+            <i class="fas fa-quote-left"></i>
+
+            <p>
+                Stackly delivered our ERP solution
+                ahead of schedule with excellent quality.
+            </p>
+
+            <h4>Business Director</h4>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <i class="fas fa-quote-left"></i>
+
+            <p>
+                Professional team with outstanding
+                technical support and communication.
+            </p>
+
+            <h4>Startup Founder</h4>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <i class="fas fa-quote-left"></i>
+
+            <p>
+                Their cloud migration service was
+                smooth, secure and efficient.
+            </p>
+
+            <h4>Operations Manager</h4>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+
+<!-- FAQ -->
+
+<!-- ========================= -->
+
+<section class="faq">
+
+
+<div class="section-title">
+
+    <span>
+        FAQ
+    </span>
+
+    <h2>
+        Frequently Asked Questions
+    </h2>
+
+</div>
+
+<div class="faq-container">
+
+    <div class="faq-item">
+
+        <h3>
+            What technologies do you use?
+        </h3>
+
+        <p>
+            We use Java, Spring Boot,
+            React, Node.js, AWS,
+            Azure and modern frameworks.
+        </p>
+
+    </div>
+
+    <div class="faq-item">
+
+        <h3>
+            Do you provide support?
+        </h3>
+
+        <p>
+            Yes, we provide technical
+            support and maintenance
+            after deployment.
+        </p>
+
+    </div>
+
+    <div class="faq-item">
+
+        <h3>
+            Can you build custom software?
+        </h3>
+
+        <p>
+            Yes, we specialize in
+            custom software solutions
+            for businesses.
+        </p>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<!-- ========================= -->
+
+<!-- CONTACT -->
+
+<!-- ========================= -->
+
+<section class="contact"
+         id="contact">
+
+
+<div class="section-title">
+
+    <span>
+        CONTACT US
+    </span>
+
+    <h2>
+        Let's Build Something Amazing
+    </h2>
+
+</div>
+
+<div class="contact-wrapper">
+
+    <div class="contact-info">
+
+        <h3>
+            Contact Information
+        </h3>
+
+        <p>
+            support@stackly.com
+        </p>
+
+        <p>
+            +91 1111122222
+        </p>
+
+        <p>
+            Chennai, Tamil Nadu
+        </p>
+
+    </div>
+    <form id="contactForm">
+
+    <input type="text"
+           id="name"
+           placeholder="Your Name"
+           required>
+
+    <input type="email"
+           id="email"
+           placeholder="Your Email"
+           required>
+
+    <textarea id="message"
+              placeholder="Your Message"
+              required></textarea>
+
+    <button type="submit">
+        Send Message
+    </button>
+
+</form>
+
+</div>
+
+
+</section>
+
+<!-- ========================= -->
+
+<!-- FOOTER -->
+
+<!-- ========================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+
+    <a href="#home">
+        <img src="./Assest/stacklylogo (1).webp"
+             class="footer-logo"
+             alt="Stackly Logo">
+    </a>
+
+    <p>
+        Stackly IT Solutions provides
+        innovative software development,
+        cloud services and digital
+        transformation solutions.
+    </p>
+
+</div>
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#services">Services</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Services</h3>
+
+            <a href="#">Web Development</a>
+
+            <a href="#">Mobile Apps</a>
+
+            <a href="#">Cloud Solutions</a>
+
+            <a href="#">Cyber Security</a>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Contact</h3>
+
+            <div class="footer-box">
+    <p>
+        <i class="fas fa-envelope"></i>
+        support@stackly.com
+    </p>
+
+    <p>
+        <i class="fas fa-phone"></i>
+        +91 1111122222
+    </p>
+
+    <p>
+        <i class="fas fa-location-dot"></i>
+        Chennai, Tamil Nadu
+    </p>
+
+</div>
+
+            <div class="social-icons">
+
+    <i class="fab fa-linkedin"></i>
+
+    <i class="fab fa-github"></i>
+
+    <i class="fab fa-instagram"></i>
+
+    <i class="fab fa-facebook"></i>
+
+</div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Stackly IT Solutions.
+            All Rights Reserved.
+        </p>
+
+    </div>
 
 </footer>
+<!-- JAVASCRIPT -->
 
 <script>
 
-/* CONSULT */
-function start(){
-  alert("Consultation request sent!");
-}
-
-/* 404 */
 function go404(){
-  window.location.href = "404.html";
-}
-
-/* FADE */
-const faders =
-document.querySelectorAll('.fade');
-
-const observer =
-new IntersectionObserver(entries=>{
-
-  entries.forEach(entry=>{
-
-    if(entry.isIntersecting){
-
-      entry.target.classList.add('show');
-
-    }
-
-  });
-
-},{threshold:0.2});
-
-faders.forEach(el=>observer.observe(el));
-
-/* ======================= */
-/* PROJECT SLIDER */
-/* ======================= */
-
-/* ========================= */
-/* PREMIUM PROJECT SLIDER */
-/* ========================= */
-
-const track =
-document.getElementById("projectTrack");
-
-const cards =
-document.querySelectorAll(".project-card");
-
-let currentIndex = 0;
-
-function getVisibleCards(){
-
-  if(window.innerWidth <= 768){
-
-    return 1;
-
-  }else if(window.innerWidth <= 1024){
-
-    return 2;
-
-  }else{
-
-    return 3;
-  }
-}
-
-function moveSlide(direction){
-
-  const visibleCards =
-  getVisibleCards();
-
-  const cardWidth =
-  cards[0].offsetWidth + 25;
-
-  currentIndex += direction;
-
-  const maxIndex =
-  cards.length - visibleCards;
-
-  if(currentIndex < 0){
-
-    currentIndex = maxIndex;
-  }
-
-  if(currentIndex > maxIndex){
-
-    currentIndex = 0;
-  }
-
-  track.style.transform =
-  `translateX(-${currentIndex * cardWidth}px)`;
-}
-
-/* AUTO SLIDE */
-setInterval(()=>{
-
-  moveSlide(1);
-
-},4000);
-
-/* CONTACT VALIDATION */
-function validateContact(){
-
-  let name =
-  document.getElementById("contactName").value.trim();
-
-  let email =
-  document.getElementById("contactEmail").value.trim();
-
-  let subject =
-  document.getElementById("contactSubject").value.trim();
-
-  let message =
-  document.getElementById("contactMessage").value.trim();
-
-  let valid = true;
-
-  /* CLEAR */
-  document.getElementById("nameError").innerText = "";
-  document.getElementById("emailError").innerText = "";
-  document.getElementById("subjectError").innerText = "";
-  document.getElementById("messageError").innerText = "";
-
-  /* NAME */
-  if(name === ""){
-
-    document.getElementById("nameError")
-    .innerText = "Name is required";
-
-    valid = false;
-  }
-
-  /* EMAIL */
-  let emailPattern =
-  /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-
-  if(!email.match(emailPattern)){
-
-    document.getElementById("emailError")
-    .innerText = "Enter valid email";
-
-    valid = false;
-  }
-
-  /* SUBJECT */
-  if(subject === ""){
-
-    document.getElementById("subjectError")
-    .innerText = "Subject is required";
-
-    valid = false;
-  }
-
-  /* MESSAGE */
-  if(message.length < 10){
-
-    document.getElementById("messageError")
-    .innerText =
-    "Message must be at least 10 characters";
-
-    valid = false;
-  }
-
-  /* SUCCESS */
-  if(valid){
 
     window.location.href =
     "404.html";
-  }
 
 }
 
-/* MOBILE MENU */
 
-function openMenu(){
+document.getElementById("contactForm")
+.addEventListener("submit", function(event){
 
-  document
-  .getElementById("mobileMenu")
-  .classList.add("active");
+    event.preventDefault();
+
+    let name =
+    document.getElementById("name").value.trim();
+
+    let email =
+    document.getElementById("email").value.trim();
+
+    let message =
+    document.getElementById("message").value.trim();
+
+    if(name && email && message){
+
+        this.reset();
+
+        window.location.href =
+        "index.html#home";
+
+    }
+
+});
+function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    const icon = document.getElementById("menuIcon");
+
+    menu.classList.toggle("active");
+
+    if(menu.classList.contains("active")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+    } else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+    }
 }
-
-function closeMenu(){
-
-  document
-  .getElementById("mobileMenu")
-  .classList.remove("active");
-}
-
 </script>
 
 </body>
+
 </html>
